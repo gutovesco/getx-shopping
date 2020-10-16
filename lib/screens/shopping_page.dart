@@ -76,12 +76,8 @@ class ShoppingPage extends GetView<ShoppingController> {
             );
           }),
         ),
-        GetX<CartController>(builder: (controller) {
-          return Text("Total amount: R\$ ${controller.totalPrice}");
-        }),
-        GetX<CartController>(builder: (controller) {
-          return Text("Cart Items: ${controller.cartCount}");
-        }),
+        Obx(() => Text("Total amount: R\$ ${_cartController.totalPrice}")),
+        Obx(() => Text("Cart Items: ${_cartController.cartCount}")),
         const SizedBox(height: 50),
       ],
     ));

@@ -24,8 +24,7 @@ class ShoppingController extends GetxController {
           id: 2,
           price: 40,
           productDescription: "this is the second product",
-          productImage:
-              "https://pm1.narvii.com/6281/9c8414e52e1282034b1eb7bd1268494f6d18d6e3_00.jpg",
+          productImage: "link to the web",
           productName: "second product")
     ];
 
